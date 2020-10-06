@@ -364,6 +364,118 @@ console.log(s.showSmoney());
 
 */
 
+/*
+class father{
+    show(){
+        return "Super Class";
+    }
+}
+
+class son extends father{
+    show(){
+        return "Sub Class";
+    }
+}
+
+var s=new son();
+
+console.log(s.show());
+
+*/
+
+
+/*
+
+var a=new Date();
+var month=a.getMonth();
+var day=a.getDay();
+console.log(getMonthName(month));
+console.log(getDayname(day));
+
+function getMonthName(monthnumber){
+    var monthname=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"];
+
+    return monthname[monthnumber];
+}
+
+function getDayname(daynumber){
+    var day=["Mon","Tue","Wed","Thru","Fri","Sat","Sun"];
+    return day[daynumber];
+}
+
+*/
+
+/*
+var tarik=new Date();
+console.log(formatDate(tarik));
+console.log(tarik);
+function formatDate(pd){
+    var date=pd.getDate();
+    var month=pd.getMonth()+1;
+    var year=pd.getFullYear();
+
+    return (`${date}/${month}/${year}`);
+}
+
+var Time=new Date();
+console.log(formatTime(Time));
+
+function formatTime(cd){
+    var hours=cd.getHours(); //Get Hours
+    var minutes=cd.getMinutes(); //Get Minutes
+    var seconds=cd.getSeconds();  //Get Seconds  
+
+    return hours>12 ? (`${hours-12}:${minutes}:${seconds} PM`) : (`${hours}:${minutes}:${seconds} AM`);
+
+    
+}
+
+*/
+
+/*
+var subtractProductAndSum = function(n) {
+  
+    let p=1;
+    let s=0;
+
+    while(n>0)
+        {
+            d=n%10;
+            p*=d;  
+            s+=d;
+            n=Math.floor(n/10);
+        }
+    return (p-s);
+};
+
+console.log(subtractProductAndSum(45));
+
+console.log(Math.floor(0.2));
+
+*/
+
+
+function prime(a){
+
+    var c=a.sort(); //sorting 
+    let uni=[...new Set(c)];  //Removing duplicates
+
+ 
+    console.log(`Second smallest ${uni[1]}`);
+    console.log(`Second greatest ${uni[uni.length-2]}`);
+    return uni;
+}
+
+console.log(prime([105,895,362,075,123,745,985,125,631,45,25,256,68,102,330,447,889,512,336,124,862]));
+  
+
+
+
+
+
+
+ 
+
 
 
 
