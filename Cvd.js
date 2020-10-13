@@ -455,42 +455,57 @@ console.log(Math.floor(0.2));
 */
 
 
-function prime(a){
-
-    var c=a.sort(); //sorting 
-    let uni=[...new Set(c)];  //Removing duplicates
-
- 
-    console.log(`Second smallest ${uni[1]}`);
-    console.log(`Second greatest ${uni[uni.length-2]}`);
-    return uni;
-}
-
-console.log(prime([105,895,362,075,123,745,985,125,631,45,25,256,68,102,330,447,889,512,336,124,862]));
-  
 
 
 
+/*
+console.log(result.nodeName);
+console.log(result.nodeValue);
+*/
+
+/*
+var a=document.getElementById("myid");
+var b=document.createElement("h2");
+var c=a.append(b);
+console.log(b);
+  */
 
 
+/*
+//create Element li
+var a=document.createElement("li");
 
- 
+//Adding text content
+a.textContent="Backbone";
 
+//Adding li into new div
+var c=document.getElementById("myang");
+;
 
-
-
-
-
-
-
-
-
-
-
-
+//Addimg 
+var e=d.insertBefore(a,c);
 
 
+console.log(d);
+*/
 
+/*
+//Accessing target element
+var h=document.getElementById("myh2");
+
+//creating new element and adding text
+var newE=document.createElement("p");
+newE.textContent="Sub-heading";
+
+//Inserting Element into target element
+var a=h.insertAdjacentElement("afterbegin",newE);
+
+console.log(h);
+
+*/ 
+
+var h=document.getElementById("myh2");
+console.log(h.firstChild.length);
 
 
 
